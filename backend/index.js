@@ -13,8 +13,8 @@ app.use(express.json());
 //* specific
 app.use(
   cors({
-    origin: "http://localhost:3000",//* sondaki slash olmayacak. sadece localhost:3000 e izin ver. Host adresi
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",//* methodlara verilecek izinleri ayarlanabilir.
+    origin: "https://tutorialapp-fs-de8.vercel.app", //* sondaki slash olmayacak. sadece localhost:3000 e izin ver. Host adresi
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE", //* methodlara verilecek izinleri ayarlanabilir.
   })
 );
 app.all("/", (req, res) => {
